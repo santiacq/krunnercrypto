@@ -1,0 +1,8 @@
+{   "cryptocurrencies" : [
+        { "coingecko_id" : "bitcoin", "name" : "bitcoin", "short" : "btc" },
+        { "coingecko_id" : "ethereum", "name" : "ethereum", "short" : "eth" },
+        { "coingecko_id" : "solana", "name" : "solana", "short" : "sol" },
+        { "coingecko_id" : "nano", "name" : "nano", "short" : "nano" }
+    ],
+    "vs_currencies" : [ "usd", "eur", "btc", "gbp" ]
+}

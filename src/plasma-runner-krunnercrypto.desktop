@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Cryptocurrencies
+Comment=View the current price of different cryptocurrencies
+Icon=bitcoin
+
+X-KDE-ServiceTypes=Plasma/Runner
+Type=Service
+
+X-KDE-PluginInfo-Author=Santiago Acquarone
+X-KDE-PluginInfo-Email=santiacquarone@gmail.com
+X-KDE-PluginInfo-Name=krunnercrypto
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-License=GPLv3
+X-KDE-PluginInfo-EnabledByDefault=true
