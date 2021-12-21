@@ -1,5 +1,5 @@
 # krunnercrypto
-A kRunner plugin to view the current price of cryptocurrencies.
+A KRunner plugin to view the current price of cryptocurrencies.
 
 It works using [CoinGecko API V3.](https://www.coingecko.com/en/api/documentation)
 
