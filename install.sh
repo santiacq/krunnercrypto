@@ -3,6 +3,20 @@
 # Exit if something fails
 set -e
 
+declare -A osInfo;
+osInfo[/etc/debian_version]="apt-get install"
+osInfo[/etc/fedora-release]="dnf install"
+osInfo[/etc/arch-release]="pacman -S"
+
+for f in ${!osInfo[@]}
+do
+    if [[ -f $f ]];then
+        package_manager=${osInfo[$f]}
+    fi
+done
+
+sudo $package_manager cmake extra-cmake-modules
+
 mkdir -p ~/.config/krunnercrypto
 cp config/config.json ~/.config/krunnercrypto
 
