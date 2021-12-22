@@ -19,7 +19,7 @@ elif [ "$ID_LIKE" = "opensuse suse" ];then
     package_manager="zypper install"
 fi
 
-echo $package_manager cmake extra-cmake-modules
+sudo $package_manager cmake extra-cmake-modules
 
 mkdir -p ~/.config/krunnercrypto
 cp config/config.json ~/.config/krunnercrypto
