@@ -3,19 +3,23 @@
 # Exit if something fails
 set -e
 
-declare -A osInfo;
-osInfo[/etc/debian_version]="apt-get install"
-osInfo[/etc/fedora-release]="dnf install"
-osInfo[/etc/arch-release]="pacman -S"
+if [ -e /etc/os-release ]; then
+   . /etc/os-release
+else
+   . /usr/lib/os-release
+fi
 
-for f in ${!osInfo[@]}
-do
-    if [[ -f $f ]];then
-        package_manager=${osInfo[$f]}
-    fi
-done
+if [ "$ID_LIKE" = "arch" ];then
+    package_manager="pacman -S"
+elif [ "$ID_LIKE" = "debain" ];then
+    package_manager="apt-get install"
+elif [ "$ID" = "fedora" ];then
+    package_manager="dnf install"
+elif [ "$ID_LIKE" = "opensuse suse" ];then
+    package_manager="zypper install"
+fi
 
-sudo $package_manager cmake extra-cmake-modules
+echo $package_manager cmake extra-cmake-modules
 
 mkdir -p ~/.config/krunnercrypto
 cp config/config.json ~/.config/krunnercrypto
