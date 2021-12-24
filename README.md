@@ -35,10 +35,15 @@ The following is the configuration which was used to create the screenshot above
 ## Usage
 Launch KRunner and type the `name` or `short` of one of the cryptocurrencies that have been configured. The runner will show the price of said cryptocurrency in the configured vs_currencies.
 
-## Installation
-1. Clone this repository
-2. Run install.sh
+## Dependencies
 
+Debian:
+`sudo apt install cmake extra-cmake-modules libkf5runner-dev gettext`
+
+## Installation
+1. Install dependencies
+2. Clone this repository
+3. Run install.sh
 
 ## Credits/Thanks
 - [naraesk/krunner-translator](https://github.com/naraesk/krunner-translator) this project was really useful as a reference.
