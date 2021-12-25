@@ -44,10 +44,10 @@ Arch/Manjaro:
 `sudo pacman -S cmake extra-cmake-modules`
 
 Fedora:
-`sudo dnf install cmake extra-cmake-modules`
+`sudo dnf install cmake extra-cmake-modules kf5-ki18n-devel kf5-krunner-devel gettext`
 
 OpenSUSE:
-`sudo zypper install cmake extra-cmake-modules`
+`sudo zypper install cmake extra-cmake-modules libQt5Core5 libqt5-qtlocation-devel ki18n-devel krunner-devel gettext-tools`
 
 ## Installation
 1. Install dependencies
