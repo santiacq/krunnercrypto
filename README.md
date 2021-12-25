@@ -37,8 +37,8 @@ Launch KRunner and type the `name` or `short` of one of the cryptocurrencies tha
 
 ## Dependencies
 
-Debian:
-`sudo apt install cmake extra-cmake-modules libkf5runner-dev gettext`
+Ubuntu/Debian:
+`sudo apt install cmake extra-cmake-modules build-essential libkf5runner-dev gettext`
 
 ## Installation
 1. Install dependencies
