@@ -38,15 +38,19 @@ Launch KRunner and type the `name` or `short` of one of the cryptocurrencies tha
 ## Dependencies
 
 Ubuntu/Debian:
+
 `sudo apt install cmake extra-cmake-modules build-essential libkf5runner-dev gettext`
 
 Arch/Manjaro:
+
 `sudo pacman -S cmake extra-cmake-modules`
 
 Fedora:
+
 `sudo dnf install cmake extra-cmake-modules kf5-ki18n-devel kf5-krunner-devel gettext`
 
 OpenSUSE:
+
 `sudo zypper install cmake extra-cmake-modules libQt5Core5 libqt5-qtlocation-devel ki18n-devel krunner-devel gettext-tools`
 
 ## Installation
