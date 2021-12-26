@@ -35,10 +35,25 @@ The following is the configuration which was used to create the screenshot above
 ## Usage
 Launch KRunner and type the `name` or `short` of one of the cryptocurrencies that have been configured. The runner will show the price of said cryptocurrency in the configured vs_currencies.
 
-## Installation
-1. Clone this repository
-2. Run install.sh
+## Dependencies
 
+Ubuntu/Debian:
+`sudo apt install cmake extra-cmake-modules build-essential libkf5runner-dev gettext`
+
+Arch/Manjaro:
+`sudo pacman -S cmake extra-cmake-modules`
+
+Fedora:
+`sudo dnf install cmake extra-cmake-modules kf5-ki18n-devel kf5-krunner-devel gettext`
+
+OpenSUSE:
+`sudo zypper install cmake extra-cmake-modules libQt5Core5 libqt5-qtlocation-devel ki18n-devel krunner-devel gettext-tools`
+
+## Installation
+1. Install dependencies
+2. Clone this repository
+3. Run install.sh
 
 ## Credits/Thanks
-- [naraesk/krunner-translator](https://github.com/naraesk/krunner-translator) this project was really useful as a reference.
+- [naraesk/krunner-translator](https://github.com/naraesk/krunner-translator) this project was really useful as a reference about consuming a REST API with Qt libraries.
+- [alex1701c/JetBrainsRunner](https://github.com/alex1701c/JetBrainsRunner) this project was useful as a reference about the dependencies needed to compile/install the plugin in different distributions.
