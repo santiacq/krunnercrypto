@@ -37,7 +37,7 @@ Launch KRunner and type the `name` or `short` of one of the cryptocurrencies tha
 
 ## Dependencies
 
-Ubuntu/Debian:
+Ubuntu/Debian: (Ubuntu >= 20.10 required)
 
 `sudo apt install cmake extra-cmake-modules build-essential libkf5runner-dev gettext`
 
